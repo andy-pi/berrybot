@@ -1,5 +1,3 @@
-# Berry Bot
-
 # Hardware
 
 ## Items
@@ -14,15 +12,16 @@ Zip ties to hold things in place, and mounting screws for the pi
 ## Connections
 MotorHAT plugged into RaspberryPi GPIO  
 7.2v battery pack connected to MotorHAT power terminals  
-Motors wires to MotorHAT terminals (you'll need to test the software to see if it is the correct polarity, but if it is incorrect this only means the direction will be reverse)
+Motors wires to MotorHAT terminals 
+(you'll need to test the software to see if it is the correct polarity, but if it is incorrect this only means the direction will be reverse)  
 HC-SR04 ultrasonic sensor connected to Pi as follows:  
 SENSOR   >   PI GPIO  
 TRIG     >   23  
-ECHO     >   24*  
+ECHO     >   24**  
 VCC      >   5 volts  
 GND      >   GND  
 
-* Connected via a voltage divider to bring the input to the Pi down to 3.3v. This is because the Pi GPIO's work at 3.3v but the HC-SR04 is 5v. See [this tutorial](https://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi) for full explanation  
+** Connected via a voltage divider to bring the input to the Pi down to 3.3v. This is because the Pi GPIO's work at 3.3v but the HC-SR04 is 5v. See [this tutorial](https://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi) for full explanation  
 
 # Software
 
