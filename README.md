@@ -25,7 +25,19 @@ GND      >   GND
 
 # Software
 
-SSH into your Pi and clone the repo. Then, just run the robot.py file and off you go! Press CTRL-C to stop.
+SSH into your Pi (I'm starting from Raspbian Jessie Lite), and do the following to setup the Pi.:
+
+``` bash
+sudo apt-get udpate
+sudo apt-get install git
+sudo apt-get install python-smbus i2c-tools python-dev 
+sudo raspi-config
+# You will enter into the Pi Config menu
+# Select option 9 Advanced config, then option A7 Enable I2C
+# then answer yes to enable and enable on each boot. Finally reboot the Pi
+```
+
+Finally, clone the repo. Then, just run the robot.py file and off you go! Press CTRL-C to stop.
 
 ``` bash
 sudo git clone https://github.com/andy-pi/berrybot.git
